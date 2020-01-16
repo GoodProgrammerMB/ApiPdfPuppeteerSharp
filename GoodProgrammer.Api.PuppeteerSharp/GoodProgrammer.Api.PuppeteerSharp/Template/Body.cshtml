@@ -1,0 +1,22 @@
+﻿@model GoodProgrammer.Api.PuppeteerSharp.Models.Body
+<html>
+<head>
+  <style>
+    body {
+      font-family: "Arial";
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .my-p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  @foreach (var item in Model.Row)
+  {
+    <p class="my-p">@item</p><br />
+  }
+</body>
+</html>
